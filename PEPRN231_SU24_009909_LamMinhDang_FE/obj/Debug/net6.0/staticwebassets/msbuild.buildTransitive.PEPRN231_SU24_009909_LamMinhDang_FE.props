@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\PEPRN231_SU24_009909_LamMinhDang_FE.props" />
-</Project>
