@@ -115,7 +115,6 @@ namespace PEPRN231_SU24_009909_LamMinhDang_BE.Controllers
         }
 
         // POST api/<PaintngsController>
-        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post([FromBody] AddDTO request)
         {
