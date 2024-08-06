@@ -26,3 +26,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish ./PEPRN231_SU24_009909_LamMinhDang.sln --configuration Release --no-test
