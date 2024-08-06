@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish ./PEPRN231_SU24_009909_LamMinhDang.sln --configuration Release --no-build
+      run: dotnet publish ./PEPRN231_SU24_009909_LamMinhDang.sln --configuration Release 
