@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PEPRN231_SU24_009909_LamMinhDang_BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+414d603486ae90d1586edfe0c61c40c89f0f6daf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PEPRN231_SU24_009909_LamMinhDang_BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PEPRN231_SU24_009909_LamMinhDang_BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
