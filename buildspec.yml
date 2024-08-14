@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 6.0
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore PEPRN231_SU24_009909_LamMinhDang_BE/PEPRN231_SU24_009909_LamMinhDang_BE.csproj
+      - dotnet restore Repository/Repository.csproj
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet build -c Release PEPRN231_SU24_009909_LamMinhDang_BE/PEPRN231_SU24_009909_LamMinhDang_BE.csproj
+      - dotnet build -c Release Repository/Repository.csproj
+  post_build:
+    commands:
+      - echo Publish started on `date`
+      - dotnet publish -c Release -o ./publish PEPRN231_SU24_009909_LamMinhDang_BE/PEPRN231_SU24_009909_LamMinhDang_BE.csproj
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: './publish'
