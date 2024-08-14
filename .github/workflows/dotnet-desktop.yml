@@ -16,8 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add safe directory for Git
-        run: git config --global --add safe.directory /github/workspace
+      - name: Add safe directory for Git within Docker
+        run: |
+          git config --global --add safe.directory /github/workspace
+          docker run --rm -v $(pwd):/repo -w /repo alpine/git config --global --add safe.directory /repo
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
